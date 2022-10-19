@@ -229,7 +229,7 @@ class ShipmentOrder {
 	 * @return string|null - Shipper-Reference or null for none
 	 * @since 3.0
 	 */
-	public function getShipperReference(): ?string {
+	public function getShipperReference() {
 		return $this->shipperReference;
 	}
 
@@ -239,7 +239,7 @@ class ShipmentOrder {
 	 * @param string|null $shipperReference - Shipper-Reference or null for none
 	 * @since 3.0
 	 */
-	public function setShipperReference(?string $shipperReference): void {
+	public function setShipperReference($shipperReference) {
 		$this->shipperReference = $shipperReference;
 	}
 
@@ -287,7 +287,7 @@ class ShipmentOrder {
 	 * @return LabelFormat|null - Label-Format | null means DHL-Default
 	 * @since 3.0
 	 */
-	public function getLabelFormat(): ?LabelFormat {
+	public function getLabelFormat() {
 		return $this->labelFormat;
 	}
 
@@ -297,7 +297,7 @@ class ShipmentOrder {
 	 * @param LabelFormat|null $labelFormat - Label-Format | null uses DHL-Default
 	 * @since 3.0
 	 */
-	public function setLabelFormat(?LabelFormat $labelFormat): void {
+	public function setLabelFormat(LabelFormat $labelFormat) {
 		$this->labelFormat = $labelFormat;
 	}
 

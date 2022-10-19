@@ -818,7 +818,7 @@ class BusinessShipment extends Version {
 	 * @return LabelFormat|null - Label-Format or null for DHL-Default
 	 * @since 3.0
 	 */
-	public function getLabelFormat(): ?LabelFormat {
+	public function getLabelFormat() {
 		return $this->labelFormat;
 	}
 
@@ -828,7 +828,7 @@ class BusinessShipment extends Version {
 	 * @param LabelFormat|null $labelFormat - Label-Format or null for DHL-Default
 	 * @since 3.0
 	 */
-	public function setLabelFormat(?LabelFormat $labelFormat): void {
+	public function setLabelFormat(LabelFormat $labelFormat) {
 		$this->labelFormat = $labelFormat;
 	}
 
