@@ -26,6 +26,7 @@ class ExportDocument {
 	const EXPORT_TYPE_OTHER = 'OTHER';
 	const EXPORT_TYPE_PRESENT = 'PRESENT';
 	const EXPORT_TYPE_COMMERCIAL_SAMPLE = 'COMMERCIAL_SAMPLE';
+	const EXPORT_TYPE_COMMERCIAL_GOODS = 'COMMERCIAL_GOODS';
 	const EXPORT_TYPE_DOCUMENT = 'DOCUMENT';
 	const EXPORT_TYPE_RETURN_OF_GOODS = 'RETURN_OF_GOODS';
 
@@ -257,7 +258,7 @@ class ExportDocument {
 	 *
 	 * @return float - Additional Fee
 	 */
-	public function getAdditionalFee(): float {
+	public function getAdditionalFee() {
 		return $this->additionalFee;
 	}
 
@@ -266,7 +267,7 @@ class ExportDocument {
 	 *
 	 * @param float $additionalFee - Additional Fee
 	 */
-	public function setAdditionalFee(float $additionalFee): void {
+	public function setAdditionalFee(float $additionalFee) {
 		$this->additionalFee = $additionalFee;
 	}
 
