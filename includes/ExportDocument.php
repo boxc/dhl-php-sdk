@@ -37,6 +37,7 @@ class ExportDocument {
 	const TERMS_OF_TRADE_DXV = 'DXV';
 	const TERMS_OF_TRADE_DDU = 'DDU';
 	const TERMS_OF_TRADE_DDX = 'DDX';
+	const TERMS_OF_TRADE_DAP = 'DAP';
 
 	/**
 	 * In case invoice has a number, client app can provide it in this field.
