@@ -268,7 +268,7 @@ class ExportDocument {
 	 *
 	 * @param float $additionalFee - Additional Fee
 	 */
-	public function setAdditionalFee(float $additionalFee) {
+	public function setAdditionalFee($additionalFee) {
 		$this->additionalFee = $additionalFee;
 	}
 
