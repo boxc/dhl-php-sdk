@@ -1304,7 +1304,7 @@ class Service {
 	 * @return bool|null - Is ParcelOutletRouting enabled or null for default
 	 * @since 3.0
 	 */
-	public function getParcelOutletRoutingEnabled(): ?bool {
+	public function getParcelOutletRoutingEnabled() {
 		return $this->parcelOutletRoutingEnabled;
 	}
 
@@ -1314,7 +1314,7 @@ class Service {
 	 * @param bool|null $parcelOutletRoutingEnabled - Is ParcelOutletRouting enabled or null for default
 	 * @since 3.0
 	 */
-	public function setParcelOutletRoutingEnabled(?bool $parcelOutletRoutingEnabled): void {
+	public function setParcelOutletRoutingEnabled(bool $parcelOutletRoutingEnabled) {
 		$this->parcelOutletRoutingEnabled = $parcelOutletRoutingEnabled;
 	}
 
@@ -1324,7 +1324,7 @@ class Service {
 	 * @return string|null - ParcelOutletRouting details or null for none
 	 * @since 3.0
 	 */
-	public function getParcelOutletRoutingDetails(): ?string {
+	public function getParcelOutletRoutingDetails() {
 		return $this->parcelOutletRoutingDetails;
 	}
 
@@ -1334,7 +1334,7 @@ class Service {
 	 * @param string|null $parcelOutletRoutingDetails - ParcelOutletRouting details or null for none
 	 * @since 3.0
 	 */
-	public function setParcelOutletRoutingDetails(?string $parcelOutletRoutingDetails): void {
+	public function setParcelOutletRoutingDetails($parcelOutletRoutingDetails) {
 		$this->parcelOutletRoutingDetails = $parcelOutletRoutingDetails;
 	}
 
