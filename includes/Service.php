@@ -1491,7 +1491,7 @@ class Service {
 	 * @return StdClass - Service-DHL-Class
 	 * @since 3.0
 	 */
-	public function getServiceClass_v3(string $productType) {
+	public function getServiceClass_v3($productType) {
 		$class = $this->getServiceClass_v2($productType);
 
 		if($this->getParcelOutletRoutingEnabled() !== null) {
